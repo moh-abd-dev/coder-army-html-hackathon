@@ -9,7 +9,7 @@
 
     <header>
 
-        <img src="./CoderArmy.png" alt="Coder Army" width="300">
+        <a href="./home.html"><img src="./CoderArmy.png" alt="Coder Army" width="300"></a>
 <ul>
     <li><a href="./home.html">Home</a></li>
     <li><a href="./notes.html">Notes</a></li>
@@ -20,7 +20,95 @@
 
     <main>
 
-                <a href="./Lec4.html">Lets move to next Lec 4 : Div Tag and Attributes(id,class) </a>
+        <h1>Lec 3 : Nested Lists & Tables</h1>
+        <h2>Contents:</h2>
+        <ul>
+            <li><a href="#1">Nested Lists</a></li>
+            <li><a href="#2">Tables</a></li>
+            <ul>
+                <li><a href="#2a">Basics</a></li>
+                <li><a href="#2b">Professional Structure (Semantic HTML)</a></li>
+                <li><a href="#2c">Advanced Layout (Spanning cells)</a></li>
+            </ul>
+        </ul>
+        <hr>
+
+        <h2 id="1">Nested Lists</h2>
+        <p><strong>Core Concept : </strong> 
+A nested list is simply a list that's placed inside a list item (&lt;li&gt;) of another list. This is the key to creating outlines and hierarchical structures, allowing you to show relationships between different pieces of information. You can nest multiple levels deep to create complex, organized outlines, which is a very powerful tool.
+</p>
+
+<p><strong>Practical Use Cases : </strong>This technique is perfect for things like course outlines, where you have main topics with sub-topics nested underneath (e.g., DSA > Array, Linked List). The video also shows a detailed example of building a daily meal plan, using a mix of headings and multiple levels of ordered (&lt;ol&gt;) and unordered (&lt;ul&gt;) lists to structure the day.
+</p>
+
+<hr>
+
+        <h2 id="2">Tables</h2>
+
+        <h3 id="2a">Basics</h3>
+        <p>Tables are used to display data in a grid of rows and columns. The fundamental tags are:
+</p>
+<ul>
+    <li><strong>&lt;table&gt;</strong> : The main container for the whole table.
+</li>
+    <li><strong>&lt;tr&gt;</strong> : Defines a Table Row.
+</li>
+    <li><strong>&lt;td&gt;</strong> : Defines Table Data, which is a single cell inside a row.
+</li>
+</ul>
+<p>To make the borders visible while you're building, you can add the border="1" attribute to the &lt;table&gt; tag.
+</p>
+
+<img src="./basic.jpeg" alt="Basic HTML Table" height="150px">
+
+<hr>
+
+        <h3 id="2b">Professional Structure(Semantic HTML)</h3>
+        <p>This is the most important part for creating high-quality, professional tables.
+</p>
+        <ul>
+            <li><strong>&lt;th&gt; (Table Header)</strong> : You should always use this tag instead of &lt;td&gt; for the heading cells of your table (like "Name", "Age", "City"). It gives the headings semantic meaning, which is crucial for accessibility (screen readers) and search engines. Browsers also typically make &lt;th&gt; text bold and centered by default.
+</li>
+<li><strong>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</strong> : These tags group the different parts of your table.
+</li>
+            <ul>
+                <li>&lt;thead&gt; wraps the row containing your table headers (&lt;th&gt;).
+</li>
+                <li>&lt;tbody&gt; wraps all the main data rows of the table.
+</li>
+                <li>&lt;tfoot&gt; wraps the footer row, which might contain totals or summaries.
+</li>
+            </ul>
+        </ul>
+        <p>Using these makes your code much cleaner, more readable, and easier for browsers and other developers to understand.
+</p>
+
+<img src="./structure.jpeg" alt="Professional Table Structure" height="150px">
+
+<hr>
+
+        <h3 id="2c">Advanced Layouts (Spanning Cells)</h3>
+        <p>To create complex tables where cells are merged, you use two key attributes:
+</p>
+<ul>
+    <li><strong>colspan (Column Span) :</strong> Adding colspan="2" to a cell tells it to stretch horizontally and take up the space of two columns.
+</li>
+    <li><strong>rowspan (Row Span) :</strong> Adding rowspan="2" to a cell tells it to stretch vertically and take up the space of two rows.
+</li>
+</ul>
+
+
+<img src="./adv1.jpeg" alt="Advanced Layout 1" height="200px">
+<br>
+<br>
+<img src="adv2.jpeg" alt="Advannced Layout 2" height="200px">
+<br>
+<br>
+<hr>
+
+
+
+                <a href="./Lec4.html">Lets move to next Lec 4 : Div, ID, Class) </a>
     </main>
     
     <footer>
