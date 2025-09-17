@@ -14,11 +14,75 @@
     <li><a href="./home.html">Home</a></li>
     <li><a href="./notes.html">Notes</a></li>
     <li><a href="./about.html">About the instructor</a></li>
+    <li><a href="./feedback.html">Feedback Form</a></li>
 </ul>
 <hr>
     </header>
 
     <main>
+
+        Part 1: Mastering HTML Forms
+Core Concept
+Forms are one of the most essential parts of the web, allowing users to input data. The main container for a form is the &lt;form&gt; tag. Inside it, you use various &lt;input&gt; tags to collect different types of information.
+
+Key Form Elements
+
+The <label> Tag: This is a crucial element for accessibility. It provides a descriptive label for each input field. The for attribute on the label should match the id of the input it describes, linking them together.
+
+Text Inputs:
+
+&lt;input type="text"&gt;: For single-line text like names or usernames.
+
+&lt;input type="password"&gt;: Hides the characters as the user types.
+
+&lt;input type="email"&gt;: A special text field for email addresses, which browsers can validate.
+
+&lt;textarea&gt;: For multi-line text input, like a comments section.
+
+Buttons:
+
+&lt;input type="submit"&gt;: A button that, by default, tries to send the form data.
+
+&lt;input type="reset"&gt;: A button that clears all the form fields back to their default state.
+
+Choice Elements:
+
+Radio Buttons (&lt;input type="radio"&gt;): Used when you want the user to select only one option from a group (e.g., gender). All radio buttons in a group must share the same name attribute.
+
+Checkboxes (&lt;input type="checkbox"&gt;): Used when the user can select zero, one, or multiple options from a list (e.g., hobbies).
+
+Other Input Types: The video also covers other useful types like date, number, and file (for uploads).
+
+Organizing Your Form
+For cleaner and more semantic code, it's a great practice to wrap each label and input pair inside another element, like a <p> tag or a <div>.
+
+Part 2: Media Tags in HTML
+This section covers how to embed different types of media directly into your webpage.
+
+Audio (&lt;audio&gt;)
+
+This tag allows you to embed sound files.
+
+The src attribute points to the audio file.
+
+The controls attribute is very important; it makes the browser show the default audio player controls (play, pause, volume).
+
+Video (&lt;video&gt;)
+
+This tag is for embedding video files.
+
+Like audio, it uses a src attribute for the file path.
+
+It also uses the controls attribute to show the player. You can also specify width and height.
+
+The autoplay and muted attributes can be used together to make a video start playing automatically without sound when the page loads.
+
+Embedding from YouTube (&lt;iframe&gt;)
+The &lt;iframe&gt; is a powerful tag that lets you embed an entire, separate webpage inside your own. The most common use case is embedding a YouTube video.
+
+You don't write this code yourself.
+
+You go to the YouTube video, click the "Share" button, then "Embed," and YouTube gives you the complete &lt;iframe&gt; code to copy and paste directly into your HTML. This is the professional and standard way to include YouTube content.
 
                 <a href="./Lec6.html">Lets move to next Lec 6 : Media Tags and deployment of multi page website</a>
 
@@ -28,6 +92,19 @@
         <hr>
 <p>Link for the Course playlist :    <a href="https://youtu.be/KD5mNp8PTko?feature=shared">Web Dev by Rohit Negi</a></p>
 <p>Github Link for the practice code files: <a href="https://github.com/coderarmy-notes/mern-stack-course">Github</a> </p>
+    <table>
+            <tr>
+                <th colspan="6">Social Media Handles</th>
+            </tr>
+            
+            <tr>
+                <td><a href="https://www.linkedin.com/in/rohit-negi9/"><img src="./linkedin.svg" alt="linkedin" height="50px" class="icons" target="_blank"></a></td>
+                <td><a href="https://www.youtube.com/@Rohit_Negi"><img src="./yt.svg" alt="YT" height="50px" class="icons" target="_blank"></a>
+                <td><a href="https://x.com/rohit_negi9"><img src="./x.svg" alt="X" height="40px" class="icons" target="_blank"></a></td></td><td><a href="https://www.instagram.com/rohit_negi9/"><img src="./instagram.svg" alt="instagram" height="40px" class="icons" target="_blank"></a></td>
+                <td><a href="https://t.me/rohit_negi_family"><img src="./telegram.svg" alt="telegram" height="40px" class="icons" target="_blank"></a></td>
+                <td><a href="https://whatsapp.com/channel/0029Va6H0tbHVvTbcuT99Y1f"><img src="./whatsapp1.svg" alt="whatsapp" height="40px" class="icons" target="_blank"></a></td>
+            </tr>
+        </table>
     </footer>
     
 </body>
