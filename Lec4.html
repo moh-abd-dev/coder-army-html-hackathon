@@ -3,56 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Defense HTML Notes</title>
+    <title>Lec 4 - Defense HTML Notes</title>
 </head>
+
+
 <body>
 
     <header>
 
+        <div class="header">
+    
+    <div class="header icon">
         <a href="./home.html"><img src="./CoderArmy.png" alt="Coder Army" width="300"></a>
+    </div>
+
+    <hr>
+<div class="website navigation"></div>
 <ul>
+
+    
     <li><a href="./home.html">Home</a></li>
     <li><a href="./notes.html">Notes</a></li>
     <li><a href="./about.html">About the instructor</a></li>
     <li><a href="./feedback.html">Feedback Form</a></li>
+
 </ul>
+</div>
+
+<hr>
+
+<div class="notesnavigation">
+    <ul>
+    <li><a href="./Lec1.html">Lec 1</a></li>
+    <li><a href="./Lec2.html">Lec 2</a></li>
+    <li><a href="./Lec3.html">Lec 3</a></li>
+    <li><a href="./Lec4.html">Lec 4</a></li>
+    <li><a href="./Lec5.html">Lec 5</a></li>
+    <li><a href="./Lec6.html">Lec 6</a></li>
+</ul>
+</div>
+
+    </div>
 <hr>
     </header>
 
     <main>
 
-        <h1>Lec 4:HTML Boilerplate, Files, Div, Class,ID</h1>
+        <h1>Lec 4: Boilerplate, File Paths, Divs, IDs & Classes</h1>
         <h2>Contents:</h2>
+        <ul>
+            <li><a href="#1">HTML Boilerplate</a></li>
+            <li><a href="#2">File Paths</a></li>
+            <li><a href="#3">The div Tag</a></li>
+            <li><a href="#4">ID vs Class</a><ul>
+                <li><a href="#4a">id Attribute</a></li>
+                <li><a href="#4b">class Attribute</a></li>
+            </ul></li>
+            
+        </ul>
+        <hr>
+
+        <h2 id="1">HTML Boilerplate: The Starting Point </h2>
+        <p>
+            The HTML boilerplate is the standard foundational structure required for every webpage. It provides the browser with the essential information needed to process and render the document correctly. In a code editor like VS Code, you can generate this instantly by typing ! and pressing Enter.
+        </p>
+
+        <p>The boilerplate is composed of the following critical tags:
+</p>
+        
+        <ul>
+            <li>
+                <strong>&lt;!DOCTYPE html&gt;</strong>:This declaration must be the first line in the document. It instructs the browser that the page is written in HTML5, ensuring it is rendered according to the latest web standards.
+            </li>
+            <li>
+                <strong>&lt;html lang="en"&gt;</strong>: This is the root element that encloses all other page content. The lang="en" attribute specifies that the document's primary language is English, which is vital for search engines, translation tools, and accessibility software. </li>
+            <li>
+                <strong>&lt;head&gt;</strong>: This section contains metadata—information about the webpage that is not displayed visually in the browser window. Key elements within the head include:
+                    
+                <ul>
+                    <li><strong>&lt;meta charset="UTF-8"&gt;:</strong>Sets the document's character encoding to UTF-8. This universal standard supports a vast range of characters and symbols from different languages.</li>
+                    <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;:</strong> This tag is critical for responsive design. It directs the browser to set the page's width to the screen width of the device and to establish an initial zoom level of 100%. This ensures the website is properly scaled on all devices, from mobile phones to desktops.</li>
+                    <li><strong>&lt;title&gt;My Awesome Page&lt;/title&gt;:</strong>  Defines the text shown in the browser tab, in browser bookmarks, and in search engine results. Every page should have a unique and descriptive title.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>&lt;body&gt;</strong>: This is where all the action happens. Everything you want the user to see—headings, paragraphs, images, videos, links, and forms—goes inside the <code>&lt;body&gt;</code> tags.
+            </li>
+        </ul>
+        <hr>
+
+        <h2 id="2">File Paths </h2>
+        <p>
+            A file path is a set of directions that tells the browser exactly where to find a specific file, whether it's another HTML page, an image, or a stylesheet. Getting this right is fundamental to making your website work.
+        </p>
+        <ul>
+            <li>
+                <strong>Relative Paths (Most Common)</strong>: These paths are "relative" to the location of the current file. This is the best way to link files within your own project because it works no matter where you host your website.
+            </li>
+                
+                <ul>
+                    <li><strong>./about.html :</strong> The ./ means start in the current folder. So this points to about.html in the same file you're editing.</li>
+                    <li><strong>.images/logo.png :</strong> This means look for a folder named images inside the current folder, and find logo.png inside of it.</li>
+                    <li><strong>../notes.html :</strong> The ../ is the go up one level command. If you were in a folder called lectures, this path would take you out of lectures and look for notes.html in the parent folder.</li>
+                </ul>
+                <br>
+            
+            <li>
+                <strong>Absolute Paths</strong>: This is a full, complete URL to a resource on the internet. You use this when linking to external websites or assets. 
+            </li>
+            <ul>
+                <li><strong>Example:</strong> https://www.youtube.com/.</li>
+            </ul>
+        </ul>
+        <hr>
+
+        <h2 id="3">The &lt;div&gt; Tag </h2>
+        <p>
+            The <strong>&lt;div&gt; (or division)</strong> tag is the most common container in HTML. By itself, it does absolutely nothing—it has no visual appearance and no special meaning. Its sole purpose is to group related elements together.
+        </p>
+        <p>
+            Think of it as an empty cardboard box. You can put a heading, a paragraph, and an image inside one div to create a card. You can put a logo and a navigation menu inside another div to create a header. By grouping elements, you can then move, style, or manipulate that entire group as a single unit using CSS and JavaScript. It's the primary tool for building modern website layouts.
+        </p>
+        <hr>
+
+        <h2 id="4">ID vs Class </h2>
+        <p>
+            IDs and Classes are attributes that you can add to any HTML tag to give them a specific name or label. They are your primary way of targeting elements for styling and interactivity.
+        </p>
+        
+            
+                <h3 id="4a">The id Attribute</h3>
+                <ul>
+                    <li> An id must be unique in a page. No two elements can have the same id. Think of it like a person's unique government ID number.</li>
+                    <li> It's used to identify a single, specific element on a page. The most common use is for linking to a specific section on the same page (like the table of contents at the top of this page) or for JavaScript to find and modify one particular element.</li>
+                    <li><strong>Example</strong>: &lt;div id="page-footer"&gt;...&lt;/div&gt;</li>
+                </ul>
+            
+            
+                <h3 id="4b">The class Attribute</h3>
+                <ul>
+                    <li> A class is reusable. You can apply the same class name to as many elements as you want. Think of it like a category or a tag, such as student or teacher in a school—many people can share that label.</li>
+                    <li> It's used to apply the same style to a group of different elements. </li>
+                    <li><strong>Example</strong>: &lt;p class="important-note"&gt;...&lt;/p&gt; and &lt;li class="important-note"&gt;...&lt;/li&gt;</li>
+                </ul>
+            
+    
+        <br>
+
+        <hr>
 
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <li><a href="./Lec3.html">Previous Lecture</a></li>
+    <li><a href="./Lec5.html">Next Lecture  </a></li>
+</ul>
 
-    <a href="./Lec5.html">Lets move to next Lec 5 : Forms</a>
 
     </main>
     
     <footer>
         <hr>
-<p>Link for the Course playlist :    <a href="https://youtu.be/KD5mNp8PTko?feature=shared">Web Dev by Rohit Negi</a></p>
-<p>Github Link for the practice code files: <a href="https://github.com/coderarmy-notes/mern-stack-course">Github</a> </p>
-    <table>
-            <tr>
-                <th colspan="6">Social Media Handles</th>
-            </tr>
-            
-            <tr>
-                <td><a href="https://www.linkedin.com/in/rohit-negi9/"><img src="./linkedin.svg" alt="linkedin" height="50px" class="icons" target="_blank"></a></td>
-                <td><a href="https://www.youtube.com/@Rohit_Negi"><img src="./yt.svg" alt="YT" height="50px" class="icons" target="_blank"></a>
-                <td><a href="https://x.com/rohit_negi9"><img src="./x.svg" alt="X" height="40px" class="icons" target="_blank"></a></td></td><td><a href="https://www.instagram.com/rohit_negi9/"><img src="./instagram.svg" alt="instagram" height="40px" class="icons" target="_blank"></a></td>
-                <td><a href="https://t.me/rohit_negi_family"><img src="./telegram.svg" alt="telegram" height="40px" class="icons" target="_blank"></a></td>
-                <td><a href="https://whatsapp.com/channel/0029Va6H0tbHVvTbcuT99Y1f"><img src="./whatsapp1.svg" alt="whatsapp" height="40px" class="icons" target="_blank"></a></td>
-            </tr>
-        </table></footer>
+        
+        <div class="footer">
+
+        <div class="referencelinks">
+
+            <p>Link for the Course playlist :    <a href="https://youtu.be/KD5mNp8PTko?feature=shared">Web Dev by Rohit Negi</a></p>
+            <p>Github Link for the practice code files: <a href="https://github.com/coderarmy-notes/mern-stack-course">Github</a> </p>
+
+        </div>
+    
+        <div class="socialmediaicons">
+
+        <a href="https://www.linkedin.com/in/rohit-negi9/" target="_blank"><img src="./linkedin.svg" alt="linkedin" height="50px" class="icons" ></a> 
+        <a href="https://www.youtube.com/@Rohit_Negi" target="_blank"><img src="./yt.svg" alt="YT" height="50px" class="icons"></a>
+        <a href="https://x.com/rohit_negi9" target="_blank"><img src="./x.svg" alt="X" height="40px" class="icons" ></a>   
+        <a href="https://t.me/rohit_negi_family" target="_blank"><img src="./telegram.svg" alt="telegram" height="40px" class="icons"></a>
+        <a href="https://www.instagram.com/rohit_negi9/" target="_blank"><img src="./instagram.svg" alt="instagram" height="40px" class="icons" ></a>
+        <a href="https://whatsapp.com/channel/0029Va6H0tbHVvTbcuT99Y1f" target="_blank"><img src="./whatsapp1.svg" alt="whatsapp" height="40px" class="icons" ></a>
+        
+        </div>
+
+        </div>
+    
+    </footer>
     
 </body>
 </html>

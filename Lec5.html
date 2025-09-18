@@ -3,108 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Defense HTML Notes</title>
+    <title>Lec 5 - Defense HTML Notes</title>
 </head>
 <body>
 
     <header>
 
+        <div class="header">
+    
+    <div class="header icon">
         <a href="./home.html"><img src="./CoderArmy.png" alt="Coder Army" width="300"></a>
+    </div>
+
+    <hr>
+<div class="website navigation"></div>
 <ul>
+
+    
     <li><a href="./home.html">Home</a></li>
     <li><a href="./notes.html">Notes</a></li>
     <li><a href="./about.html">About the instructor</a></li>
-    <li><a href="./feedback.html">Feedback Form</a></li>
+                <li><a href="./feedback.html">Feedback Form</a></li>
+
 </ul>
+</div>
+
+<hr>
+
+<div class="notesnavigation">
+    <ul>
+    <li><a href="./Lec1.html">Lec 1</a></li>
+    <li><a href="./Lec2.html">Lec 2</a></li>
+    <li><a href="./Lec3.html">Lec 3</a></li>
+    <li><a href="./Lec4.html">Lec 4</a></li>
+    <li><a href="./Lec5.html">Lec 5</a></li>
+    <li><a href="./Lec6.html">Lec 6</a></li>
+</ul>
+</div>
+
+    </div>
 <hr>
     </header>
 
     <main>
 
-        Part 1: Mastering HTML Forms
-Core Concept
-Forms are one of the most essential parts of the web, allowing users to input data. The main container for a form is the &lt;form&gt; tag. Inside it, you use various &lt;input&gt; tags to collect different types of information.
+        <h1>Lec : 5 HTML Forms </h1>
 
-Key Form Elements
+        <h2>Contents</h2>
 
-The <label> Tag: This is a crucial element for accessibility. It provides a descriptive label for each input field. The for attribute on the label should match the id of the input it describes, linking them together.
+        <ul>
+            <li><a href="#1">Overview</a></li>
+            <li><a href="#2">Imp Form Elements</a>
+                <ul>
+                <li><a href="#2a">Text-Based Inputs</a></li>
+                <li><a href="#2b">Choice Elements</a></li>
+                <li><a href="#2c">Buttons</a></li>
+            </ul></li>
+            
+        </ul>
 
-Text Inputs:
+        <hr>
 
-&lt;input type="text"&gt;: For single-line text like names or usernames.
+        <h2 id="1">Overview</h2>
 
-&lt;input type="password"&gt;: Hides the characters as the user types.
+<p >Forms are a vital part of the web, allowing users to input and submit data. The main container for all form elements is the <strong>&lt;form&gt;</strong> tag. Inside this, various <strong>&lt;input&gt;</strong> tags are used to collect different types of information.</p>
 
-&lt;input type="email"&gt;: A special text field for email addresses, which browsers can validate.
+<p >A crucial element for accessibility and usability is the <strong>&lt;label&gt;</strong> tag. It provides a description for an input field. By linking a label to an input using the for attribute (which should match the input's id), users can click on the label's text to immediately focus on the input field, which is especially helpful on mobile devices.</p>
+        
+<hr>
 
-&lt;textarea&gt;: For multi-line text input, like a comments section.
+<h2 id="2">Imp Form Elements</h2>
 
-Buttons:
+        <h3 id="2a">Text-Based Inputs
+</h3>
 
-&lt;input type="submit"&gt;: A button that, by default, tries to send the form data.
+        <p>These are used for collecting written information.
+</p>
 
-&lt;input type="reset"&gt;: A button that clears all the form fields back to their default state.
+<ul>
+    <li><strong>&lt;input type="text"&gt;</strong> : Creates a single-line text field for general input like names or usernames.</li>
+    <li><strong>&lt;input type="password"&gt;</strong> : A text field that hides the characters as the user types, used for sensitive information.</li>
+    <li><strong>&lt;input type="email"&gt;</strong> : A field designed for email addresses. Browsers can automatically check if the entered text is in a valid email format.</li>
+    <li><strong>&lt;textarea&gt;</strong> : A multi-line text field, ideal for longer messages, comments, or addresses.</li>
+</ul>
 
-Choice Elements:
+<hr>
 
-Radio Buttons (&lt;input type="radio"&gt;): Used when you want the user to select only one option from a group (e.g., gender). All radio buttons in a group must share the same name attribute.
+<h3 id="2b">Choice Elements</h3>
+<p>These allow users to select from a predefined list of options.</p>
+<ul>
+    <li><strong>&lt;input type="radio"&gt;</strong> : Radio buttons are used when a user must select only one option from a group (e.g., Yes/No). All radio buttons in a single choice group must share the same 'name' attribute.</li>
+    <li><strong>&lt;input type="checkbox"&gt;</strong> : Checkboxes are used when a user can select zero, one, or multiple options from a list (e.g., selecting hobbies or topics of interest).</li>
+</ul>
 
-Checkboxes (&lt;input type="checkbox"&gt;): Used when the user can select zero, one, or multiple options from a list (e.g., hobbies).
+<hr>
 
-Other Input Types: The video also covers other useful types like date, number, and file (for uploads).
+<h3 id="2c">Buttons</h3>
+<p>Buttons trigger actions within the form.</p>
+<ul>
+    <li><strong>&lt;button type="submit"&gt;</strong> : When clicked, this button attempts to send the collected form data to a server.</li>
+    <li><strong>&lt;button type="reset"&gt;</strong> : This button clears all the form fields and returns them to their default state.</li>
+</ul>
 
-Organizing Your Form
-For cleaner and more semantic code, it's a great practice to wrap each label and input pair inside another element, like a <p> tag or a <div>.
+<p>Can refer to this form for refernce : <a href="https://mysampleform.netlify.app/">Sample form</a> </p>
 
-Part 2: Media Tags in HTML
-This section covers how to embed different types of media directly into your webpage.
+<hr>
 
-Audio (&lt;audio&gt;)
+<ul>
+    <li><a href="./Lec4.html">Previous Lecture</a></li>
+    <li><a href="./Lec6.html">Next Lecture  </a></li>
+</ul>
 
-This tag allows you to embed sound files.
-
-The src attribute points to the audio file.
-
-The controls attribute is very important; it makes the browser show the default audio player controls (play, pause, volume).
-
-Video (&lt;video&gt;)
-
-This tag is for embedding video files.
-
-Like audio, it uses a src attribute for the file path.
-
-It also uses the controls attribute to show the player. You can also specify width and height.
-
-The autoplay and muted attributes can be used together to make a video start playing automatically without sound when the page loads.
-
-Embedding from YouTube (&lt;iframe&gt;)
-The &lt;iframe&gt; is a powerful tag that lets you embed an entire, separate webpage inside your own. The most common use case is embedding a YouTube video.
-
-You don't write this code yourself.
-
-You go to the YouTube video, click the "Share" button, then "Embed," and YouTube gives you the complete &lt;iframe&gt; code to copy and paste directly into your HTML. This is the professional and standard way to include YouTube content.
-
-                <a href="./Lec6.html">Lets move to next Lec 6 : Media Tags and deployment of multi page website</a>
 
     </main>
     
     <footer>
         <hr>
-<p>Link for the Course playlist :    <a href="https://youtu.be/KD5mNp8PTko?feature=shared">Web Dev by Rohit Negi</a></p>
-<p>Github Link for the practice code files: <a href="https://github.com/coderarmy-notes/mern-stack-course">Github</a> </p>
-    <table>
-            <tr>
-                <th colspan="6">Social Media Handles</th>
-            </tr>
-            
-            <tr>
-                <td><a href="https://www.linkedin.com/in/rohit-negi9/"><img src="./linkedin.svg" alt="linkedin" height="50px" class="icons" target="_blank"></a></td>
-                <td><a href="https://www.youtube.com/@Rohit_Negi"><img src="./yt.svg" alt="YT" height="50px" class="icons" target="_blank"></a>
-                <td><a href="https://x.com/rohit_negi9"><img src="./x.svg" alt="X" height="40px" class="icons" target="_blank"></a></td></td><td><a href="https://www.instagram.com/rohit_negi9/"><img src="./instagram.svg" alt="instagram" height="40px" class="icons" target="_blank"></a></td>
-                <td><a href="https://t.me/rohit_negi_family"><img src="./telegram.svg" alt="telegram" height="40px" class="icons" target="_blank"></a></td>
-                <td><a href="https://whatsapp.com/channel/0029Va6H0tbHVvTbcuT99Y1f"><img src="./whatsapp1.svg" alt="whatsapp" height="40px" class="icons" target="_blank"></a></td>
-            </tr>
-        </table>
+        
+        <div class="footer">
+
+        <div class="referencelinks">
+
+            <p>Link for the Course playlist :    <a href="https://youtu.be/KD5mNp8PTko?feature=shared">Web Dev by Rohit Negi</a></p>
+            <p>Github Link for the practice code files: <a href="https://github.com/coderarmy-notes/mern-stack-course">Github</a> </p>
+
+        </div>
+    
+        <div class="socialmediaicons">
+
+        <a href="https://www.linkedin.com/in/rohit-negi9/" target="_blank"><img src="./linkedin.svg" alt="linkedin" height="50px" class="icons" ></a> 
+        <a href="https://www.youtube.com/@Rohit_Negi" target="_blank"><img src="./yt.svg" alt="YT" height="50px" class="icons"></a>
+        <a href="https://x.com/rohit_negi9" target="_blank"><img src="./x.svg" alt="X" height="40px" class="icons" ></a>   
+        <a href="https://t.me/rohit_negi_family" target="_blank"><img src="./telegram.svg" alt="telegram" height="40px" class="icons"></a>
+        <a href="https://www.instagram.com/rohit_negi9/" target="_blank"><img src="./instagram.svg" alt="instagram" height="40px" class="icons" ></a>
+        <a href="https://whatsapp.com/channel/0029Va6H0tbHVvTbcuT99Y1f" target="_blank"><img src="./whatsapp1.svg" alt="whatsapp" height="40px" class="icons" ></a>
+        
+        </div>
+
+        </div>
+
     </footer>
     
 </body>

@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lec 3 - Defense HTML Notes</title>
 </head>
 <body>
 
     <header>
 
+        <div class="header">
+    
+    <div class="header icon">
         <a href="./home.html"><img src="./CoderArmy.png" alt="Coder Army" width="300"></a>
+    </div>
+
+    <hr>
+<div class="website navigation">
 <ul>
+
+    
     <li><a href="./home.html">Home</a></li>
     <li><a href="./notes.html">Notes</a></li>
     <li><a href="./about.html">About the instructor</a></li>
-    <li><a href="./feedback.html">Feedback Form</a></li>
+                <li><a href="./feedback.html">Feedback Form</a></li>
+
 </ul>
+</div>
+
+<hr>
+
+<div class="notesnavigation">
+    <ul>
+    <li><a href="./Lec1.html">Lec 1</a></li>
+    <li><a href="./Lec2.html">Lec 2</a></li>
+    <li><a href="./Lec3.html">Lec 3</a></li>
+    <li><a href="./Lec4.html">Lec 4</a></li>
+    <li><a href="./Lec5.html">Lec 5</a></li>
+    <li><a href="./Lec6.html">Lec 6</a></li>
+</ul>
+</div>
+
+    </div>
 <hr>
     </header>
 
@@ -25,12 +51,13 @@
         <h2>Contents:</h2>
         <ul>
             <li><a href="#1">Nested Lists</a></li>
-            <li><a href="#2">Tables</a></li>
-            <ul>
+            <li><a href="#2">Tables</a>
+                <ul>
                 <li><a href="#2a">Basics</a></li>
                 <li><a href="#2b">Professional Structure (Semantic HTML)</a></li>
                 <li><a href="#2c">Advanced Layout (Spanning cells)</a></li>
-            </ul>
+            </ul></li>
+            
         </ul>
         <hr>
 
@@ -71,15 +98,15 @@ A nested list is simply a list that's placed inside a list item (&lt;li&gt;) of 
             <li><strong>&lt;th&gt; (Table Header)</strong> : You should always use this tag instead of &lt;td&gt; for the heading cells of your table (like "Name", "Age", "City"). It gives the headings semantic meaning, which is crucial for accessibility (screen readers) and search engines. Browsers also typically make &lt;th&gt; text bold and centered by default.
 </li>
 <li><strong>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</strong> : These tags group the different parts of your table.
-</li>
-            <ul>
+<ul>
                 <li>&lt;thead&gt; wraps the row containing your table headers (&lt;th&gt;).
 </li>
                 <li>&lt;tbody&gt; wraps all the main data rows of the table.
 </li>
                 <li>&lt;tfoot&gt; wraps the footer row, which might contain totals or summaries.
 </li>
-            </ul>
+            </ul></li>
+            
         </ul>
         <p>Using these makes your code much cleaner, more readable, and easier for browsers and other developers to understand.
 </p>
@@ -107,28 +134,38 @@ A nested list is simply a list that's placed inside a list item (&lt;li&gt;) of 
 <br>
 <hr>
 
+<ul>
+    <li><a href="./Lec2.html">Previous Lecture</a></li>
+    <li><a href="./Lec4.html">Next Lecture  </a></li>
+</ul>
 
-
-                <a href="./Lec4.html">Lets move to next Lec 4 : Div, ID, Class) </a>
+    
+    
     </main>
     
     <footer>
-        <hr>
-<p>Link for the Course playlist :    <a href="https://youtu.be/KD5mNp8PTko?feature=shared">Web Dev by Rohit Negi</a></p>
-<p>Github Link for the practice code files: <a href="https://github.com/coderarmy-notes/mern-stack-course">Github</a> </p>
-<table>
-            <tr>
-                <th colspan="6">Social Media Handles</th>
-            </tr>
-            
-            <tr>
-                <td><a href="https://www.linkedin.com/in/rohit-negi9/"><img src="./linkedin.svg" alt="linkedin" height="50px" class="icons" target="_blank"></a></td>
-                <td><a href="https://www.youtube.com/@Rohit_Negi"><img src="./yt.svg" alt="YT" height="50px" class="icons" target="_blank"></a>
-                <td><a href="https://x.com/rohit_negi9"><img src="./x.svg" alt="X" height="40px" class="icons" target="_blank"></a></td></td><td><a href="https://www.instagram.com/rohit_negi9/"><img src="./instagram.svg" alt="instagram" height="40px" class="icons" target="_blank"></a></td>
-                <td><a href="https://t.me/rohit_negi_family"><img src="./telegram.svg" alt="telegram" height="40px" class="icons" target="_blank"></a></td>
-                <td><a href="https://whatsapp.com/channel/0029Va6H0tbHVvTbcuT99Y1f"><img src="./whatsapp1.svg" alt="whatsapp" height="40px" class="icons" target="_blank"></a></td>
-            </tr>
-        </table>    
+        <hr><div class="footer">
+
+        <div class="referencelinks">
+
+            <p>Link for the Course playlist :    <a href="https://youtu.be/KD5mNp8PTko?feature=shared">Web Dev by Rohit Negi</a></p>
+            <p>Github Link for the practice code files: <a href="https://github.com/coderarmy-notes/mern-stack-course">Github</a> </p>
+
+        </div>
+    
+        <div class="socialmediaicons">
+
+        <a href="https://www.linkedin.com/in/rohit-negi9/" target="_blank"><img src="./linkedin.svg" alt="linkedin" height="50px" class="icons" ></a> 
+        <a href="https://www.youtube.com/@Rohit_Negi" target="_blank"><img src="./yt.svg" alt="YT" height="50px" class="icons"></a>
+        <a href="https://x.com/rohit_negi9" target="_blank"><img src="./x.svg" alt="X" height="40px" class="icons" ></a>   
+        <a href="https://t.me/rohit_negi_family" target="_blank"><img src="./telegram.svg" alt="telegram" height="40px" class="icons"></a>
+        <a href="https://www.instagram.com/rohit_negi9/" target="_blank"><img src="./instagram.svg" alt="instagram" height="40px" class="icons" ></a>
+        <a href="https://whatsapp.com/channel/0029Va6H0tbHVvTbcuT99Y1f" target="_blank"><img src="./whatsapp1.svg" alt="whatsapp" height="40px" class="icons" ></a>
+        
+        </div>
+
+        </div>
+
 </footer>
     
 </body>
